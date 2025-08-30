@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopeeKit | Vídeos prontos para turbinar suas vendas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF5722;
+            --background: #fff8f5;
+            --foreground: linear-gradient(135deg, #ffe0b2 0%, #ffccbc 100%);
+            --text: #3e2723;
+            --text-foreground: #4e342e;
+            --text-primary: #ffffff;
+            --primary-font: Prompt;
+            --secondary-font: Montserrat;
+        }
+    </style>
+</head>
+<body class="font-sans text-[--text]" style="background: var(--background); font-family: var(--secondary-font);">
+  <header class="fixed top-0 w-full z-50 backdrop-blur bg-white/70 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+        <div class="text-xl font-bold">ShopeeKit</div>
+        <a id="cta_button" href="https://mpago.li/27xTg2a" class="px-6 py-2 rounded-lg text-md font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="videocam" class="mr-2"></ion-icon>Comprar o Pack</a>
+    </div>
+</header>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:[&>*:first-child]:order-none [&>*:first-child]:order-2 [&>*:last-child]:order-1 animate__animated animate__fadeInUp">
+        <div class="flex flex-col justify-center">
+            <h1 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Pack com <span class="text-[--primary]">+ de 1500 vídeos</span> prontos para shopee</h1>
+            <p id="description" class="text-lg leading-relaxed mb-6 text-[--text] opacity-75">Venda Mais Rápido com Conteúdo de Alta Performance! Você está cansado de perder horas criando vídeos que não engajam? Chegou a solução ideal para escalar suas vendas com mais praticidade, qualidade e resultado real!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="play-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div class="space-y-1">
+                        <div class="font-bold text-[--text] leading-[20px]">Conteúdo dinâmico</div>
+                        <div class="text-sm text-[--text] opacity-75">Vídeos curtos e objetivos para aprendizado rápido.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="trending-up-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div class="space-y-1">
+                        <div class="font-bold text-[--text] leading-[20px]">Aumento de vendas</div>
+                        <div class="text-sm text-[--text] opacity-75">Técnicas comprovadas para impulsionar suas vendas.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="time-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div class="space-y-1">
+                        <div class="font-bold text-[--text] leading-[20px]">Acesso imediato</div>
+                        <div class="text-sm text-[--text] opacity-75">Comece a assistir e aplicar hoje mesmo.</div>
+                    </div>
+                </div>
+            </div>
+            <a id="cta_button" href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg text-lg font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="cart-outline" class="mr-2"></ion-icon>Quero o Pack de Vídeos!</a>
+        </div>
+        <div class="flex justify-center items-center p-0 md:p-4">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <img src="./assets/img1.jpg" class="object-cover rounded-xl w-full h-full" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--background);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text]">
+            <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Transforme suas vendas na Shopee!
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[--text]">O que é um pack de vídeos prontos?</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[--text]">Um pack exclusivo com mais de 1500 vídeos profissionais, prontos para você usar nos seus anúncios, produtos e redes sociais — sem precisar editar, filmar ou gastar com produção.</p>
+        <a id="cta_button" href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg text-lg font-semibold text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="cart-outline" class="mr-2"></ion-icon>Quero o Pack de Vídeos!</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="videocam-outline" class="align-middle mr-1"></ion-icon> Vídeos Exclusivos
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text-primary]" style="font-family: var(--primary-font);">O que você vai receber?</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-primary] opacity-80">Descubra estratégias comprovadas para maximizar suas vendas na Shopee com nossos vídeos detalhados e práticos, feitos especialmente para vendedores como você.</p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="rocket-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">+ de 1500 vídeos</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">+ de 1500 vídeos prontos para Shopee e outras plataformas</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="people-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Conteúdo por nicho</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Conteúdos separados por nichos: eletrônicos, beleza, casa, acessórios, pets, moda e muito mais</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="analytics-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Qualidade profissional</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Qualidade profissional de imagem e edição</p>
+            </div>
+
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="laptop-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Formatos ideais</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Formatos ideais para Shopee, TikTok, Instagram, Reels e Shorts</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="layers-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Organização ágil</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Organização por categorias para facilitar sua rotina</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="time-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Atualizações futuras</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Atualizações futuras inclusas (de acordo com a oferta adquirida)</p>
+            </div>
+        </div>
+        <a id="cta_button" href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="play-circle" class="mr-2"></ion-icon>Comece a aprender agora</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="albums-outline" class="align-middle mr-1"></ion-icon> Ideal para você!
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Para quem é este pack?</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Este material é ideal para:</p>
+        <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./assets/card1.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm space-y-2">
+                    <h3 class="text-lg font-semibold text-[--text] leading-[20px]">Vendedores e lojistas na Shopee</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Acesse vídeos exclusivos ensinando estratégias eficazes de vendas.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./assets/card2.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm space-y-2">
+                    <h3 class="text-lg font-semibold text-[--text] leading-[20px]">Afiliados e dropshippers</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Receba suporte especializado para alavancar suas vendas.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./assets/card3.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm space-y-2">
+                    <h3 class="text-lg font-semibold text-[--text] leading-[20px]">Criadores de conteúdo digital</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Um guia passo a passo para otimizar suas operações na Shopee.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./assets/card4.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm space-y-2">
+                    <h3 class="text-lg font-semibold text-[--text] leading-[20px]">Empreendedores inteligentes</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Empreendedores que querem escalar suas vendas com mais velocidade</p>
+                </div>
+            </div>
+        </div>
+        <a href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os materiais</a>
+    </div>
+</section>
+
+<section class="min-h-screen flex items-center py-20 gap-12">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12 animate__animated animate__fadeInUp">
+        <div class="flex justify-center items-center">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <img src="./assets/img2.jpg" class="object-cover rounded-xl w-full h-full" />
+            </div>
+        </div>
+        <div class="max-w-6xl">
+            <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+                <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Principais benefícios
+            </div>
+            <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Benefícios práticos que fazem a diferença</h2>
+            <div id="list" class="space-y-3 mb-10">
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Economize tempo com conteúdo pronto para usar</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Valorize seus produtos com vídeos profissionais</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Publique com mais frequência e consistência</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Aumente o alcance e as chances de viralização</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Fique à frente da concorrência com conteúdos estratégicos</span></div>
+            </div>
+            <a id="cta_button" href="https://mpago.li/27xTg2a="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero esses benefícios</a>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="py-20" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Transforme suas vendas na Shopee!
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[--text-primary]">O que é um pack de vídeos prontos?</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[--text-primary]">Um pack exclusivo com mais de 1500 vídeos profissionais, prontos para você usar nos seus anúncios, produtos e redes sociais — sem precisar editar, filmar ou gastar com produção.</p>
+        <a id="cta_button" href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="play-circle" class="mr-2"></ion-icon>Quero começar agora</a>
+    </div>
+</section> -->
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="albums-outline" class="align-middle mr-1"></ion-icon> Conteúdos de qualidade!
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Veja alguns exemplos de vídeos inclusos</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Você terá acesso à mais de 1500 vídeos como esses</p>
+        <div id="cards" class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+            <div>
+                <div class="relative group">
+                    <video id="video1" src="./assets/1_4900431863669065040.mp4" class="w-full object-cover rounded-xl bg-gray-200"></video>
+                    <button id="playPauseBtn1" type="button" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl">
+                        <ion-icon id="playIcon1" name="play-circle-outline" class="text-5xl text-white"></ion-icon>
+                        <ion-icon id="pauseIcon1" name="pause-circle-outline" class="text-5xl text-white hidden"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="relative group">
+                    <video id="video2" src="./assets/1_4945430579626640708.mp4" class="w-full object-cover rounded-xl bg-gray-200"></video>
+                    <button id="playPauseBtn2" type="button" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl">
+                        <ion-icon id="playIcon2" name="play-circle-outline" class="text-5xl text-white"></ion-icon>
+                        <ion-icon id="pauseIcon2" name="pause-circle-outline" class="text-5xl text-white hidden"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="relative group">
+                    <video id="video3" src="./assets/1_5006186199153378876.mp4" class="w-full object-cover rounded-xl bg-gray-200"></video>
+                    <button id="playPauseBtn3" type="button" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl">
+                        <ion-icon id="playIcon3" name="play-circle-outline" class="text-5xl text-white"></ion-icon>
+                        <ion-icon id="pauseIcon3" name="pause-circle-outline" class="text-5xl text-white hidden"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="relative group">
+                    <video id="video4" src="./assets/1_5154627548872705239.mp4" class="w-full object-cover rounded-xl bg-gray-200"></video>
+                    <button id="playPauseBtn4" type="button" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl">
+                        <ion-icon id="playIcon4" name="play-circle-outline" class="text-5xl text-white"></ion-icon>
+                        <ion-icon id="pauseIcon4" name="pause-circle-outline" class="text-5xl text-white hidden"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="relative group">
+                    <video id="video5" src="./assets/1_5167959354992756043.mp4" class="w-full object-cover rounded-xl bg-gray-200"></video>
+                    <button id="playPauseBtn5" type="button" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl">
+                        <ion-icon id="playIcon5" name="play-circle-outline" class="text-5xl text-white"></ion-icon>
+                        <ion-icon id="pauseIcon5" name="pause-circle-outline" class="text-5xl text-white hidden"></ion-icon>
+                    </button>
+                </div>
+            </div>
+             <div>
+                <div class="relative group">
+                    <video id="video6" src="./assets/1_5167959354992756046.mp4" class="w-full object-cover rounded-xl bg-gray-200"></video>
+                    <button id="playPauseBtn6" type="button" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity rounded-t-xl">
+                        <ion-icon id="playIcon6" name="play-circle-outline" class="text-5xl text-white"></ion-icon>
+                        <ion-icon id="pauseIcon6" name="pause-circle-outline" class="text-5xl text-white hidden"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <a href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os materiais</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="chatbubble-ellipses-outline" class="align-middle mr-1"></ion-icon> Depoimentos
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Resultados de quem já usa!</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">MA</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Nunca imaginei que vídeos prontos fariam tanta diferença. Hoje vendo todos os dias!”</p>
+                <div class="font-semibold text-[--primary]">Marcos A., Afiliado Iniciante</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">BR</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Uso nos meus Stories e os clientes começaram a perguntar direto pelo produto!”</p>
+                <div class="font-semibold text-[--primary]">Bianca R., Loja Parceira</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">FD</div>
+                <p class="italic mb-4 text-[--text-foreground]">“A edição dos vídeos é profissional demais! É só postar e pronto!”</p>
+                <div class="font-semibold text-[--primary]">Felipe D., Criador de Conteúdo</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">NF</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Comecei sem saber nada e já estou faturando com a Shopee usando esse pack!”</p>
+                <div class="font-semibold text-[--primary]">Natalia F., Iniciante no Dropshipping</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">LS</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Postei 3 vídeos no TikTok e um deles viralizou com mais de 25 mil views!”</p>
+                <div class="font-semibold text-[--primary]">Luan S., Criador de Conteúdo</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">IM</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Economizei tempo e dinheiro com editor. Tudo já vem pronto!”</p>
+                <div class="font-semibold text-[--primary]">Isabela M., Vendedora Shopee</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">RC</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Os vídeos têm uma pegada muito atual. Isso faz toda a diferença no engajamento!”</p>
+                <div class="font-semibold text-[--primary]">Renan C., Dropshipper</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">LK</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Foi o investimento mais barato e mais eficaz que já fiz pra vender online!”</p>
+                <div class="font-semibold text-[--primary]">Lorena K., Afiliada Profissional</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">DP</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Simplesmente perfeito pra quem quer crescer sem mostrar o rosto!”</p>
+                <div class="font-semibold text-[--primary]">Douglas P., Criador Anônimo</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4 flex items-center justify-center text-center font-semibold">TE</div>
+                <p class="italic mb-4 text-[--text-foreground]">“Já usei vídeos pagos antes, mas nada chega perto da qualidade desse pack!”</p>
+                <div class="font-semibold text-[--primary]">Thais E., Loja Parceira Shopee</div>
+            </div>
+        </div>
+        <a href="https://mpago.li/27xTg2a" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero adquirir o pack</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="card-outline" class="align-middle mr-1"></ion-icon> Investimento
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Invista no seu sucesso com o ShopeeKit</h2>
+        <div class="p-8 rounded-2xl max-w-md w-full mx-auto mb-12 bg-[--primary] text-[--text-primary] shadow-lg">
+            <div class="text-left mb-4">
+                <p class="text-sm text-[--text-primary] opacity-75"><span class="line-through">De: R$297,00</span> Por apenas:</p>
+                <p class="text-7xl font-bold text-[--text-primary]">R$10</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Acesso imediato aos vídeos</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Conteúdo exclusivo Shopee</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Feito por especialistas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Estratégias de vendas comprovadas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Suporte no telegram</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Atualizações frequentes</span>
+                </li>
+            </ul>
+            <a id="cta_button" href="https://mpago.li/27xTg2a="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary] uppercase"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero meu Pack!</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="help-circle-outline" class="align-middle mr-1"></ion-icon> FAQ
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center text-[--text-foreground]" style="font-family: var(--primary-font);">Perguntas Frequentes</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-foreground] opacity-80">Confira algumas perguntas frequentes que sempre recebemos</p>
+        
+        <div id="accordion-faq">
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Onde vou receber os vídeos?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Te enviaremos os vídeos pelo Telegram</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>É indicado para novos vendedores?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Sim. Qualquer vendedor pode se beneficiar das técnicas e estratégias apresentadas.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>O conteúdo foi revisado por especialistas?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Sim. Todo o conteúdo foi revisado por especialistas em vendas e marketing digital.</p>
+            </details>
+        </div>
+        
+        <a id="cta_button" href="https://mpago.li/27xTg2a="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero meu pack de vídeos</a>
+    </div>
+</section>
+
+<footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <p class="text-xs">© 2025 ShopeeKit. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Seleciona todos os vídeos e botões play/pause
+        const videoButtons = document.querySelectorAll('button[id^="playPauseBtn"]');
+        videoButtons.forEach(function(btn) {
+            const btnId = btn.id.replace('playPauseBtn', '');
+            const video = document.getElementById('video' + btnId);
+            const playIcon = document.getElementById('playIcon' + btnId);
+            const pauseIcon = document.getElementById('pauseIcon' + btnId);
+            if (!video || !playIcon || !pauseIcon) return;
+
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (video.paused) {
+                    video.play();
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                } else {
+                    video.pause();
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                }
+            });
+
+            video.addEventListener('pause', function() {
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+            });
+
+            video.addEventListener('play', function() {
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            });
+        });
+    });
+</script>
+</body>
+</html>

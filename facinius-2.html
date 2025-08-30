@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facinius | Moda e Elegância para Mulheres Sofisticadas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #B76E79;
+            --background: #FFF8F5;
+            --foreground: linear-gradient(135deg, #F5E9E2 0%, #ECD9D1 100%);
+            --text: #3D3D3D;
+            --text-foreground: #2C2C2C;
+            --text-primary: #FFFFFF;
+            --primary-font: Playfair Display;
+            --secondary-font: Lato;
+        }
+    </style>
+</head>
+<body class="font-sans text-[--text]" style="background: var(--background); font-family: var(--secondary-font);">
+  <header class="fixed top-0 w-full z-50 backdrop-blur bg-white/70 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+        <div class="text-xl font-bold">Facinius</div>
+        <a id="cta_button" href="#shop" class="px-6 py-2 rounded-lg text-md font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="bag" class="mr-2"></ion-icon>Explore a Coleção</a>
+    </div>
+</header>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:[&>*:first-child]:order-none [&>*:first-child]:order-2 [&>*:last-child]:order-1 animate__animated animate__fadeInUp">
+        <div class="flex flex-col justify-center">
+            <h1 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Descubra as Últimas Tendências em <span class="text-[--primary]">Moda e Acessórios Femininos</span></h1>
+            <p id="description" class="text-lg leading-relaxed mb-6 text-[--text] opacity-75">Explore nosso catálogo sofisticado, repleto de peças que definem estilo e elegância. Desde roupas de grife até acessórios deslumbrantes, temos tudo para realçar sua beleza e confiança. Atualize seu guarda-roupa com as novidades mais quentes do mercado.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="shirt-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Estilo Exclusivo</div>
+                        <div class="text-sm text-[--text] opacity-75">Peças únicas para destacar sua personalidade.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="star-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Qualidade Premium</div>
+                        <div class="text-sm text-[--text] opacity-75">Materiais selecionados para durabilidade e conforto.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="gift-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Ofertas Imperdíveis</div>
+                        <div class="text-sm text-[--text] opacity-75">Descontos especiais em produtos selecionados.</div>
+                    </div>
+                </div>
+            </div>
+            <a id="cta_button" href="#shop-now" class="px-6 py-4 rounded-lg text-lg font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="bag-handle" class="mr-2"></ion-icon>Explore Agora!</a>
+        </div>
+        <div class="flex justify-center items-center p-0 md:p-4">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">Coleção Moda & Acessórios</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="diamond-outline" class="align-middle mr-1"></ion-icon> Moda Exclusiva
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text-primary]" style="font-family: var(--primary-font);">Descubra o Estilo Sofisticado que Completa Você</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-primary] opacity-80">Explore uma coleção única de moda e acessórios que realçam sua beleza e estilo, feitos para mulheres modernas e sofisticadas.</p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="shirt-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Moda Elegante</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Roupas que combinam elegância e conforto para todas as ocasiões.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="sparkles-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Beleza e Glamour</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Acessórios que destacam sua beleza natural com um toque de glamour.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="bag-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Acessórios de Luxo</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Peças exclusivas que complementam seu look com sofisticação.</p>
+            </div>
+        </div>
+        <a id="cta_button" href="#shop" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="cart-outline" class="mr-2"></ion-icon>Explore a Coleção</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="albums-outline" class="align-middle mr-1"></ion-icon> O que você vai receber
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Descubra tudo que você vai receber ao explorar nossa coleção</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Mergulhe em um mundo de moda e beleza com acessórios que destacam seu estilo único e sofisticado.</p>
+        <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="shirt-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Coleção de Moda</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Explore nossas últimas tendências em moda feminina para todas as ocasiões.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="diamond-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Acessórios Exclusivos</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Adicione um toque de elegância com nossos acessórios exclusivos.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="color-palette-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Beleza e Cuidados</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Cuide de você com nossa linha de produtos de beleza premium.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="gift-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Presentes Sofisticados</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Encontre o presente perfeito com nossas opções sofisticadas e elegantes.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os produtos</a>
+    </div>
+</section>
+
+<section class="min-h-screen flex items-center py-20 gap-12">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12 animate__animated animate__fadeInUp">
+        <div class="flex justify-center items-center">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">Moda & Acessórios</span>
+            </div>
+        </div>
+        <div class="max-w-6xl">
+            <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+                <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Descubra o que oferecemos
+            </div>
+            <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Estilo e Elegância em Cada Detalhe</h2>
+            <div id="list" class="space-y-3 mb-10">
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Coleções exclusivas de roupas e acessórios</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Tendências de moda para cada estação</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Acessórios que complementam o seu look</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Dicas de beleza e cuidados pessoais</span></div>
+            </div>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Explore Nossa Coleção</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="star-outline" class="align-middle mr-1"></ion-icon> Destaque da temporada
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[--text-primary]">Eleve seu estilo com nossas coleções exclusivas!</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[--text-primary]">Descubra peças que combinam sofisticação e elegância, perfeitas para todas as ocasiões. Explore nossa seleção de moda e acessórios pensados para você.</p>
+        <a id="cta_button" href="#shop" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="bag-handle-outline" class="mr-2"></ion-icon>Explore a coleção</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="chatbubble-ellipses-outline" class="align-middle mr-1"></ion-icon> Depoimentos Reais
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">O que nossas clientes dizem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Os acessórios são de altíssima qualidade e complementam meu estilo perfeitamente.”</p>
+                <div class="font-semibold text-[--primary]">Ana P., Rio de Janeiro</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“A coleção de moda é incrível, sempre encontro algo que amo!”</p>
+                <div class="font-semibold text-[--primary]">Mariana S., Belo Horizonte</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Os produtos de beleza são fantásticos, minha pele nunca esteve tão radiante.”</p>
+                <div class="font-semibold text-[--primary]">Camila R., Porto Alegre</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Adoro a variedade de acessórios, sempre encontro algo novo e elegante.”</p>
+                <div class="font-semibold text-[--primary]">Juliana T., São Paulo</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“A experiência de compra é sempre maravilhosa, atendimento impecável.”</p>
+                <div class="font-semibold text-[--primary]">Fernanda L., Salvador</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Peças sofisticadas e de excelente qualidade, recomendo a todas!”</p>
+                <div class="font-semibold text-[--primary]">Patrícia C., Brasília</div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os produtos</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="card-outline" class="align-middle mr-1"></ion-icon> Exclusividade
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Descubra a sofisticação em cada detalhe</h2>
+        <div class="p-8 rounded-2xl max-w-md w-full mx-auto mb-12 bg-[--primary] text-[--text-primary] shadow-lg">
+            <div class="text-left mb-4">
+                <p class="text-sm text-[--text-primary] opacity-75"><span class="line-through">De: R$299,00</span> Por apenas:</p>
+                <p class="text-7xl font-bold text-[--text-primary]">R$149</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Design exclusivo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Materiais de alta qualidade</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Conforto garantido</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Estilo atemporal</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Atendimento personalizado</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Entrega rápida</span>
+                </li>
+            </ul>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary] uppercase"><ion-icon name="ribbon" class="mr-2"></ion-icon>Compre Agora</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="help-circle-outline" class="align-middle mr-1"></ion-icon> FAQ
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center text-[--text-foreground]" style="font-family: var(--primary-font);">Perguntas Frequentes</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-foreground] opacity-80">Confira algumas perguntas frequentes sobre nossos produtos de moda e acessórios femininos</p>
+        
+        <div id="accordion-faq">
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Os produtos são de alta qualidade?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Sim, todos os nossos produtos passam por rigorosos controles de qualidade para garantir a satisfação de nossas clientes.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Quais são as opções de pagamento?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Aceitamos cartões de crédito, débito, e pagamentos via PayPal e Pix.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Posso trocar ou devolver um produto?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Sim, oferecemos troca ou devolução em até 30 dias após o recebimento do produto, desde que esteja em perfeito estado.</p>
+            </details>
+        </div>
+        
+        <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Explore nossa coleção</a>
+    </div>
+</section>
+
+<footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <p class="text-xs">© 2025 Facinius. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

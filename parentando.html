@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parentando | A Comunidade Segura para Mães e Pais Conscientes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #F59E0B;
+            --background: #FFFBF5;
+            --foreground: linear-gradient(135deg, #FCE9D4 0%, #FFF3E0 100%);
+            --text: #3B3B3B;
+            --text-foreground: #2A2A2A;
+            --text-primary: #FFFFFF;
+            --primary-font: Nunito;
+            --secondary-font: Quicksand;
+        }
+    </style>
+</head>
+<body class="font-sans text-[--text]" style="background: var(--background); font-family: var(--secondary-font);">
+  <header class="fixed top-0 w-full z-50 backdrop-blur bg-white/70 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+        <div class="text-xl font-bold">Superapp Parentando</div>
+        <a id="cta_button" href="#join" class="px-6 py-2 rounded-lg text-md font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="heart" class="mr-2"></ion-icon>Junte-se a nós!</a>
+    </div>
+</header>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:[&>*:first-child]:order-none [&>*:first-child]:order-2 [&>*:last-child]:order-1 animate__animated animate__fadeInUp">
+        <div class="flex flex-col justify-center">
+            <h1 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Superapp Parentando, a rede social <span class="text-[--primary]">exclusiva e segura</span> para mães e pais</h1>
+            <p id="description" class="text-lg leading-relaxed mb-6 text-[--text] opacity-75">O Movimento Melhores Gerações (MMG) é uma iniciativa que defende uma causa nobre: ajudar mães e pais a se prepararem melhor para a missão de educar seus filhos. Promovendo uma parentalidade respeitosa, consciente e amorosa, acreditamos que ao educarmos melhor as crianças de hoje, estamos formando adultos mais preparados.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="people-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Comunidade ativa</div>
+                        <div class="text-sm text-[--text] opacity-75">Conecte-se com outras famílias e compartilhe experiências.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="chatbubbles-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Aprendizado contínuo</div>
+                        <div class="text-sm text-[--text] opacity-75">Aprenda com experts em educação parental.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="pricetag-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Economize de verdade</div>
+                        <div class="text-sm text-[--text] opacity-75">Aproveite nosso clube de benefícios e cashback.</div>
+                    </div>
+                </div>
+            </div>
+            <a id="cta_button" href="#superapp" class="px-6 py-4 rounded-lg text-lg font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="download-outline" class="mr-2"></ion-icon>Baixe o Superapp Parentando</a>
+        </div>
+        <div class="flex justify-center items-center p-0 md:p-4">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">Imagem do Superapp Parentando</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="sparkles-outline" class="align-middle mr-1"></ion-icon> Benefícios Exclusivos
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text-primary]" style="font-family: var(--primary-font);">Por que o Superapp Parentando é ideal para você?</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-primary] opacity-80">O Parentando é uma rede social exclusiva para mães e pais, promovendo uma parentalidade consciente, respeitosa e amorosa em um ambiente seguro e acolhedor.</p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="chatbubbles-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Aprenda com experts</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Tenha acesso a conteúdos exclusivos e orientações de especialistas em educação parental.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="people-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Comunidade acolhedora</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Participe de fóruns e compartilhe experiências com outras famílias em um espaço seguro.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="cash-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Clube de benefícios</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Economize com cashback e descontos em grandes marcas, farmácias, gasolina e muito mais.</p>
+            </div>
+        </div>
+        <a id="cta_button" href="#join" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero fazer parte</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="albums-outline" class="align-middle mr-1"></ion-icon> O que você vai receber
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Veja tudo o que você vai receber nessa jornada</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Aproveite materiais que ampliam seu conhecimento e oferecem suporte para tornar sua experiência de amamentação ainda mais segura e especial.</p>
+        <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="document-text-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Checklist da Mamãe</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Organize sua rotina com um guia prático de preparação para o dia a dia.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="chatbubbles-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Grupo de Apoio</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Participe da nossa comunidade exclusiva e compartilhe experiências.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="videocam-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Aulas em Vídeo</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Aprenda com especialistas por meio de aulas em vídeo exclusivas.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="book-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Ebooks Complementares</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Explore outros títulos que aprofundam temas essenciais da maternidade.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os materiais</a>
+    </div>
+</section>
+
+<section class="min-h-screen flex items-center py-20 gap-12">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12 animate__animated animate__fadeInUp">
+        <div class="flex justify-center items-center">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">Superapp Parentando</span>
+            </div>
+        </div>
+        <div class="max-w-6xl">
+            <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+                <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> O que você vai encontrar
+            </div>
+            <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Benefícios práticos que fazem a diferença</h2>
+            <div id="list" class="space-y-3 mb-10">
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Aprender com experts em educação parental</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Fazer perguntas e receber orientações específicas</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Participar de fóruns divididos por faixas etárias</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Compartilhar experiências com outras famílias</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Acesso a conteúdos exclusivos e dicas</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Economizar com nosso clube de benefícios</span></div>
+            </div>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero esses benefícios</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Junte-se ao movimento
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[--text-primary]">Participe do Superapp Parentando!</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[--text-primary]">Uma rede social exclusiva e segura para mães e pais, promovendo uma parentalidade consciente, respeitosa e amorosa. Venha fazer parte de uma comunidade que apoia e evolui junto.</p>
+        <a id="cta_button" href="#superapp" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="heart" class="mr-2"></ion-icon>Quero fazer parte</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="chatbubble-ellipses-outline" class="align-middle mr-1"></ion-icon> Depoimentos Reais
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">O que nossos clientes dizem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“O Parentando me ajudou a me conectar mais com meus filhos. Recomendo!”</p>
+                <div class="font-semibold text-[--primary]">Ana P., Rio de Janeiro</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Um espaço seguro e acolhedor para compartilhar experiências e aprender.”</p>
+                <div class="font-semibold text-[--primary]">Lucas T., Florianópolis</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Os fóruns são incríveis para trocar ideias com outros pais. Adoro!”</p>
+                <div class="font-semibold text-[--primary]">Mariana R., Porto Alegre</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“O apoio e as dicas que recebi me fizeram uma mãe mais confiante.”</p>
+                <div class="font-semibold text-[--primary]">Beatriz L., Brasília</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“A comunidade do Parentando é como uma segunda família para mim.”</p>
+                <div class="font-semibold text-[--primary]">Carlos S., Belo Horizonte</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Economizei muito com o clube de benefícios. Vale a pena!”</p>
+                <div class="font-semibold text-[--primary]">Fernanda G., Salvador</div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os materiais</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="card-outline" class="align-middle mr-1"></ion-icon> Investimento
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Invista no seu bem estar e no bem estar do seu bebê</h2>
+        <div class="p-8 rounded-2xl max-w-md w-full mx-auto mb-12 bg-[--primary] text-[--text-primary] shadow-lg">
+            <div class="text-left mb-4">
+                <p class="text-sm text-[--text-primary] opacity-75"><span class="line-through">De: R$197,00</span> Por apenas:</p>
+                <p class="text-7xl font-bold text-[--text-primary]">R$47</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Acesso imediato</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Guia pronto pra uso</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Ilustrações de exemplo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Garantia de satisfação</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Checklist prático para o dia a dia</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Grupo de apoio exclusivo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Aulas em vídeo com especialistas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Ebooks complementares</span>
+                </li>
+            </ul>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary] uppercase"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero meu guia!</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="help-circle-outline" class="align-middle mr-1"></ion-icon> FAQ
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center text-[--text-foreground]" style="font-family: var(--primary-font);">Perguntas Frequentes</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-foreground] opacity-80">Confira algumas perguntas frequentes que sempre recebemos</p>
+        
+        <div id="accordion-faq">
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>O que é o Superapp Parentando?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">O Superapp Parentando é uma rede social exclusiva para mães e pais, oferecendo um espaço seguro e acolhedor para promover a parentalidade consciente.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Quais são os benefícios de participar do Parentando?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Os membros têm acesso a conteúdos exclusivos, fóruns, orientações de especialistas, e um clube de benefícios com descontos e cashback.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Como o Parentando apoia a parentalidade consciente?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Através de conteúdos educativos, fóruns de discussão e orientação por especialistas, o Parentando promove práticas parentais respeitosas e amorosas.</p>
+            </details>
+        </div>
+        
+        <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero participar do Parentando</a>
+    </div>
+</section>
+
+<footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <p class="text-xs">© 2025 Superapp Parentando. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

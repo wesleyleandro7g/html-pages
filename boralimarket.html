@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BorAli Market | O Futuro do Varejo Autônomo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FFB400;
+            --background: #1A1A1A;
+            --foreground: linear-gradient(135deg, #FFB400 0%, #FF3C38 100%);
+            --text: #FFFFFF;
+            --text-foreground: #1A1A1A;
+            --text-primary: #1A1A1A;
+            --primary-font: Rubik;
+            --secondary-font: Inter;
+        }
+    </style>
+</head>
+<body class="font-sans text-[--text]" style="background: var(--background); font-family: var(--secondary-font);">
+  <header class="fixed top-0 w-full z-50 backdrop-blur bg-white/70 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+        <div class="text-xl font-bold text-black">BorAli Market</div>
+        <a id="cta_button" href="#contact" class="px-6 py-2 rounded-lg text-md font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-yellow-600 text-black"><ion-icon name="cart" class="mr-2"></ion-icon>Entre em Contato</a>
+    </div>
+</header>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:[&>*:first-child]:order-none [&>*:first-child]:order-2 [&>*:last-child]:order-1 animate__animated animate__fadeInUp">
+        <div class="flex flex-col justify-center">
+            <h1 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Transforme seu negócio com o <span class="text-[--primary]">BorAli Market</span>, o mercado autônomo moderno</h1>
+            <p id="description" class="text-lg leading-relaxed mb-6 text-[--text] opacity-75">Descubra como o BorAli Market pode revolucionar a experiência de compras em sua empresa. Ofereça conveniência e inovação com nosso mercado autônomo, enquanto mantém um design moderno e atrativo. Explore as vantagens de integrar nossa tecnologia de ponta ao seu espaço.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="storefront-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Solução Inovadora</div>
+                        <div class="text-sm text-[--text] opacity-75">Mercado autônomo para empresas modernas.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="rocket-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Rápida Implementação</div>
+                        <div class="text-sm text-[--text] opacity-75">Instalação e operação sem complicações.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="cash-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Aumento de Receita</div>
+                        <div class="text-sm text-[--text] opacity-75">Maximize seus lucros com nossa solução.</div>
+                    </div>
+                </div>
+            </div>
+            <a id="cta_button" href="#contact" class="px-6 py-4 rounded-lg text-lg font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="business-outline" class="mr-2"></ion-icon>Entre em Contato</a>
+        </div>
+        <div class="flex justify-center items-center p-0 md:p-4">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">BorAli Market</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="sparkles-outline" class="align-middle mr-1"></ion-icon> Benefícios Exclusivos
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text-primary]" style="font-family: var(--primary-font);">Por que o BorAli Market é ideal para sua empresa?</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-primary] opacity-80">Descubra como o BorAli Market pode transformar sua empresa com um mercado autônomo moderno, oferecendo conveniência e inovação para seus funcionários e clientes.</p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="cart-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Conveniência 24/7</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Ofereça produtos disponíveis a qualquer hora, aumentando a satisfação e produtividade.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="cash-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Redução de Custos</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Diminua despesas operacionais com um mercado autônomo e eficiente.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="trending-up-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Inovação e Modernidade</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Adote uma solução moderna que posiciona sua empresa à frente no mercado.</p>
+            </div>
+        </div>
+        <a id="cta_button" href="#contact" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="business-outline" class="mr-2"></ion-icon>Quero saber mais</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="albums-outline" class="align-middle mr-1"></ion-icon> O que você vai receber
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Veja tudo o que você vai receber com o BorAli Market</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Aproveite soluções modernas e autônomas que transformam a experiência de compra em algo inovador e conveniente.</p>
+        <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="cart-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Mercado Autônomo</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Experimente a conveniência de um mercado sem filas e sem caixas.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="analytics-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Relatórios de Vendas</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Obtenha insights detalhados para melhorar suas estratégias de vendas.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="shield-checkmark-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Segurança Avançada</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Garanta a segurança dos produtos e dos dados com tecnologia de ponta.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="color-palette-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Design Moderno</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Atraia clientes com um design moderno e uma paleta de cores vibrante.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os materiais</a>
+    </div>
+</section>
+
+<section class="min-h-screen flex items-center py-20 gap-12">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12 animate__animated animate__fadeInUp">
+        <div class="flex justify-center items-center">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">BorAli Market</span>
+            </div>
+        </div>
+        <div class="max-w-6xl">
+            <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+                <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> O que você vai encontrar
+            </div>
+            <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Benefícios práticos que fazem a diferença</h2>
+            <div id="list" class="space-y-3 mb-10">
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Acesso a um mercado autônomo e moderno</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Estilo inovador que atrai clientes</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Paleta de cores marcante: preto, amarelo e vermelho</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Suporte completo para implementação</span></div>
+            </div>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero esses benefícios</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Junte-se ao futuro do varejo
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[--text-primary]">Transforme seu negócio com o BorAli Market!</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[--text-primary]">Descubra como a parceria com o BorAli Market pode revolucionar sua operação, oferecendo um mercado autônomo e moderno que atrai clientes e aumenta suas vendas.</p>
+        <a id="cta_button" href="#contact" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="business" class="mr-2"></ion-icon>Quero saber mais</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="chatbubble-ellipses-outline" class="align-middle mr-1"></ion-icon> Depoimentos Reais
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">O que nossos clientes dizem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“BorAli Market revolucionou nosso espaço de trabalho. Praticidade e estilo em um só lugar!”</p>
+                <div class="font-semibold text-[--primary]">Ana S., Rio de Janeiro</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“A experiência de compra nunca foi tão moderna e eficiente. Super recomendo!”</p>
+                <div class="font-semibold text-[--primary]">Lucas T., São Paulo</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Design inovador e cores vibrantes. BorAli Market é um diferencial para qualquer empresa.”</p>
+                <div class="font-semibold text-[--primary]">Mariana L., Curitiba</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Facilitou nossa rotina e trouxe mais conforto para nossos colaboradores.”</p>
+                <div class="font-semibold text-[--primary]">Carlos M., Porto Alegre</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Excelente serviço e qualidade. BorAli Market é sinônimo de inovação.”</p>
+                <div class="font-semibold text-[--primary]">Fernanda A., Brasília</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Transformou nosso ambiente corporativo com um toque de modernidade.”</p>
+                <div class="font-semibold text-[--primary]">Rafael G., Belo Horizonte</div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os materiais</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="card-outline" class="align-middle mr-1"></ion-icon> Investimento
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Invista no acesso exclusivo ao BorAli Market</h2>
+        <div class="p-8 rounded-2xl max-w-md w-full mx-auto mb-12 bg-[--primary] text-[--text-primary] shadow-lg">
+            <div class="text-left mb-4">
+                <p class="text-sm text-[--text-primary] opacity-75"><span class="line-through">De: R$997,00</span> Por apenas:</p>
+                <p class="text-7xl font-bold text-[--text-primary]">R$297</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Acesso imediato ao mercado</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Integração com sistemas de gestão</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Design moderno e atrativo</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Suporte técnico dedicado</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Personalização de marca</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Relatórios detalhados de vendas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Atualizações gratuitas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Acesso a novas funcionalidades</span>
+                </li>
+            </ul>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary] uppercase"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero acessar o BorAli Market!</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="help-circle-outline" class="align-middle mr-1"></ion-icon> FAQ
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center text-[--text-foreground]" style="font-family: var(--primary-font);">Perguntas Frequentes</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-foreground] opacity-80">Confira algumas perguntas frequentes que sempre recebemos</p>
+        
+        <div id="accordion-faq">
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Como posso acessar o BorAli Market?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Você pode acessar o BorAli Market através do nosso aplicativo ou diretamente em nossas lojas físicas.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Quais são as vantagens de ser parceiro do BorAli Market?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Como parceiro, sua empresa terá acesso a um mercado autônomo moderno, com uma base de clientes fiel e crescente.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Qual é a paleta de cores do BorAli Market?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">O BorAli Market utiliza uma paleta de cores moderna com preto, amarelo fechado e vermelho.</p>
+            </details>
+        </div>
+        
+        <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Seja um parceiro</a>
+    </div>
+</section>
+
+<footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <p class="text-xs">© 2025 BorAli Market. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

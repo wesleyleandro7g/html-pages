@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Cleaning | Sua casa impecável, sempre</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0077CC;
+            --background: #F4F9FF;
+            --foreground: linear-gradient(135deg, #d1f2ff 0%, #ffffff 100%);
+            --text: #1C1C1C;
+            --text-foreground: #1C1C1C;
+            --text-primary: #ffffff;
+            --primary-font: Poppins;
+            --secondary-font: Lato;
+        }
+    </style>
+</head>
+<body class="font-sans text-[--text]" style="background: var(--background); font-family: var(--secondary-font);">
+  <header class="fixed top-0 w-full z-50 backdrop-blur bg-white/70 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+        <div class="text-xl font-bold">Empire Cleaning</div>
+        <a id="cta_button" href="#services" class="px-6 py-2 rounded-lg text-md font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="flash" class="mr-2"></ion-icon>Explore Nossos Serviços</a>
+    </div>
+</header>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:[&>*:first-child]:order-none [&>*:first-child]:order-2 [&>*:last-child]:order-1 animate__animated animate__fadeInUp">
+        <div class="flex flex-col justify-center">
+            <h1 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Experimente a Excelência da <span class="text-[--primary]">Empire Cleaning</span> em Sua Casa</h1>
+            <p id="description" class="text-lg leading-relaxed mb-6 text-[--text] opacity-75">Descubra como nossos serviços de limpeza residencial podem transformar seu espaço. Seja para uma limpeza profunda, pós-obra, de primavera ou para sua casa de férias, estamos aqui para ajudar. Atendemos com excelência na Flórida e em Massachusetts.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="sparkles-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Limpeza Profunda</div>
+                        <div class="text-sm text-[--text] opacity-75">Deixe sua casa impecável com nosso serviço especializado.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="construct-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Pós-Obra</div>
+                        <div class="text-sm text-[--text] opacity-75">Remova todo o resíduo e poeira após a reforma.</div>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <ion-icon name="leaf-outline" class="text-[--primary] text-3xl"></ion-icon>
+                    <div>
+                        <div class="font-bold text-[--text]">Limpeza de Primavera</div>
+                        <div class="text-sm text-[--text] opacity-75">Renove seu espaço com uma limpeza sazonal completa.</div>
+                    </div>
+                </div>
+            </div>
+            <a id="cta_button" href="#services" class="px-6 py-4 rounded-lg text-lg font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="home-outline" class="mr-2"></ion-icon>Agende sua Limpeza</a>
+        </div>
+        <div class="flex justify-center items-center p-0 md:p-4">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">Empire Cleaning Services</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="sparkles-outline" class="align-middle mr-1"></ion-icon> Serviços Exclusivos
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text-primary]" style="font-family: var(--primary-font);">Por que escolher a Empire Cleaning?</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-primary] opacity-80">Oferecemos serviços de limpeza especializados para garantir que sua casa esteja sempre impecável, seja na Flórida ou em Massachusetts.</p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="home-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Limpeza Profunda</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Deixe cada canto da sua casa brilhando com nossa limpeza detalhada e minuciosa.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="construct-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Limpeza Pós-Obra</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Remova resíduos e poeira de reformas e construções com nossa limpeza especializada.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="leaf-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Limpeza de Primavera</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Renove sua casa com uma limpeza completa para receber a nova estação.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 p-6 hover:shadow-lg transition">
+                <ion-icon name="airplane-outline" class="text-4xl mb-4 text-[--text-primary]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[--text-primary]">Casas de Férias</h3>
+                <p class="text-sm text-gray-200 leading-relaxed text-[--text-primary] opacity-80">Mantenha seu imóvel de férias sempre pronto para uso com nossa manutenção regular.</p>
+            </div>
+        </div>
+        <a id="cta_button" href="#contact" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="call-outline" class="mr-2"></ion-icon>Entre em contato agora</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="albums-outline" class="align-middle mr-1"></ion-icon> O que você vai receber
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Descubra nossos serviços de limpeza excepcionais</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Transforme sua casa com nossos serviços especializados de limpeza, disponíveis na Flórida e em Massachusetts.</p>
+        <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="sparkles-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Limpeza Profunda</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Experimente uma limpeza completa que deixa sua casa impecável em todos os cantos.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="construct-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Limpeza Pós-Obra</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Remova todos os resíduos e poeira após reformas com nossa limpeza especializada.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="leaf-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Limpeza de Primavera</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Renove sua casa com uma limpeza sazonal que traz frescor e organização.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-40 flex items-center justify-center">
+                    <ion-icon name="home-outline" class="text-4xl text-gray-500"></ion-icon>
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-[--text]">Limpeza para Casas de Férias</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Garanta que sua casa de férias esteja sempre pronta para receber visitas.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os serviços</a>
+    </div>
+</section>
+
+<section class="min-h-screen flex items-center py-20 gap-12">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12 animate__animated animate__fadeInUp">
+        <div class="flex justify-center items-center">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <span class="text-gray-500 text-lg">Empire Cleaning Services</span>
+            </div>
+        </div>
+        <div class="max-w-6xl">
+            <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+                <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Serviços que oferecemos
+            </div>
+            <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Soluções de Limpeza Profunda e Detalhada</h2>
+            <div id="list" class="space-y-3 mb-10">
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Limpeza profunda para cada canto da sua casa</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Serviços especializados em limpeza pós-obra</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Limpeza de primavera para renovar seu lar</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Preparação de casas de férias impecáveis</span></div>
+            </div>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Agende seu serviço hoje</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--primary);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/10 text-sm px-4 py-2 rounded-full mb-4 border border-white/20 text-[--text-primary]">
+            <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> Serviços Exclusivos na Flórida e Massachusetts
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[--text-primary]">Transforme sua casa com a Empire Cleaning!</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[--text-primary]">Descubra nossos serviços de limpeza profunda, pós-obra, de primavera e para casas de férias, garantindo ambientes impecáveis e confortáveis.</p>
+        <a id="cta_button" href="#services" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="home" class="mr-2"></ion-icon>Conheça nossos serviços</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="chatbubble-ellipses-outline" class="align-middle mr-1"></ion-icon> Depoimentos Reais
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">O que nossos clientes dizem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“O serviço de limpeza profunda foi impecável. Minha casa nunca esteve tão limpa!”</p>
+                <div class="font-semibold text-[--primary]">Ana S., Miami</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Contratei para uma limpeza pós-obra e fiquei impressionada com a eficiência.”</p>
+                <div class="font-semibold text-[--primary]">Lucas P., Orlando</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Excelente serviço de limpeza de primavera. Minha casa está brilhando!”</p>
+                <div class="font-semibold text-[--primary]">Maria T., Boston</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Usamos para nossa casa de férias e ficamos extremamente satisfeitos.”</p>
+                <div class="font-semibold text-[--primary]">John D., Cape Cod</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“A Empire Cleaning superou nossas expectativas em todos os aspectos.”</p>
+                <div class="font-semibold text-[--primary]">Emily R., Tampa</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5">
+                <div class="w-12 h-12 rounded-full bg-black/10 mb-4"></div>
+                <p class="italic mb-4 text-[--text-foreground]">“Recomendo para todos que precisam de um serviço de limpeza confiável.”</p>
+                <div class="font-semibold text-[--primary]">Carlos M., Fort Lauderdale</div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Ver todos os serviços</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="card-outline" class="align-middle mr-1"></ion-icon> Investimento
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Invista na limpeza perfeita para sua casa</h2>
+        <div class="p-8 rounded-2xl max-w-md w-full mx-auto mb-12 bg-[--primary] text-[--text-primary] shadow-lg">
+            <div class="text-left mb-4">
+                <p class="text-sm text-[--text-primary] opacity-75"><span class="line-through">De: $299,00</span> Por apenas:</p>
+                <p class="text-7xl font-bold text-[--text-primary]">$149</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Limpeza profunda</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Limpeza pós-obra</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Limpeza de primavera</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Limpeza para casas de férias</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Atuação na Flórida e Massachusetts</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[--text-primary] text-xl"></ion-icon>
+                    <span>Equipe altamente treinada</span>
+                </li>
+            </ul>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary] uppercase"><ion-icon name="ribbon" class="mr-2"></ion-icon>Agende sua limpeza!</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="help-circle-outline" class="align-middle mr-1"></ion-icon> FAQ
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center text-[--text-foreground]" style="font-family: var(--primary-font);">Perguntas Frequentes</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text-foreground] opacity-80">Confira algumas perguntas frequentes sobre nossos serviços de limpeza residencial</p>
+        
+        <div id="accordion-faq">
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Quais serviços de limpeza vocês oferecem?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Oferecemos limpeza profunda, pós-obra, de primavera e para casas de férias.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Em quais regiões vocês atuam?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Atuamos na Flórida e em Massachusetts.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text-foreground] font-semibold focus:outline-none border-b border-[--text-foreground] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Como agendar um serviço?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text-foreground] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text-foreground] font-normal mt-2">Você pode agendar um serviço pelo nosso site ou entrando em contato diretamente conosco.</p>
+            </details>
+        </div>
+        
+        <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text-primary]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Agende sua limpeza agora</a>
+    </div>
+</section>
+
+<footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <p class="text-xs">© 2025 Empire Cleaning. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>

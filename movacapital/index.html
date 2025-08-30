@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mova Capital | Estratégia e Recuperação Financeira</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../favicon/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #66a6ff;
+            --background: #f4f6f9;
+            --foreground: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            --text: #1b1b1b;
+            --text-foreground: #ffffff;
+            --text-primary: #ffffff;
+            --primary-font: Titillium Web;
+            --secondary-font: Roboto;
+        }
+        .text-gradient {
+            background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-2 {
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-[--text]" style="background: var(--background); font-family: var(--secondary-font);">
+<header class="fixed top-0 w-full z-50 backdrop-blur bg-white/10 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-8">
+        <div class="text-xl font-bold text-white text-nowrap text-gradient">Mova Capital</div>
+        <a id="cta_button" href="#contact" class="px-6 py-2 rounded-lg text-md font-semibold text-center w-full md:w-fit hover:opacity-75 transition-all duration-300" style="background: var(--foreground);"><ion-icon name="cash" class="mr-2"></ion-icon>Fale Conosco</a>
+    </div>
+</header>
+
+<section class="min-h-screen" style="background-image: url('./visionary_building.jpg'); background-repeat: repeat; background-size: cover; background-attachment: fixed;">
+    <div class="min-h-screen py-20 flex items-center bg-gradient-to-r from-black to-black/40">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:[&>*:first-child]:order-none [&>*:first-child]:order-2 [&>*:last-child]:order-1 animate__animated animate__fadeInUp">
+            <div class="flex flex-col justify-center col-span-2">
+                <h1 id="headline" class="text-6xl md:text-7xl font-bold mb-6 text-left text-white" style="font-family: var(--primary-font);">
+                    Consultoria Financeira para <span class="text-gradient-2">Empresários e Investidores</span> Visionários
+                </h1>
+                <p id="description" class="text-lg leading-relaxed mb-6 text-white opacity-85">
+                    Descubra soluções financeiras personalizadas para impulsionar seus negócios. Nossa equipe oferece estratégias eficazes para captação de investimentos, recuperação de créditos e muito mais.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                    <div class="flex gap-3 items-start rounded-xl backdrop-blur bg-gradient-to-br from-white/5 to-white/20 border border-white/10 p-4 hover:shadow-lg transition">
+                        <ion-icon name="trending-up-outline" class="text-[--primary] text-3xl"></ion-icon>
+                        <div>
+                            <div class="font-bold text-white">Estratégias de Crescimento</div>
+                            <div class="text-sm text-white opacity-75">Planos personalizados para alavancar seus negócios.</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-start rounded-xl bg-gradient-to-br from-white/5 to-white/20 border border-white/10 p-4 hover:shadow-lg transition">
+                        <ion-icon name="cash-outline" class="text-[--primary] text-3xl"></ion-icon>
+                        <div>
+                            <div class="font-bold text-white">Captação de Investimentos</div>
+                            <div class="text-sm text-white opacity-75">Conectamos você aos melhores investidores do mercado.</div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-start rounded-xl bg-gradient-to-br from-white/5 to-white/20 border border-white/10 p-4 hover:shadow-lg transition">
+                        <ion-icon name="refresh-outline" class="text-[--primary] text-3xl"></ion-icon>
+                        <div>
+                            <div class="font-bold text-white">Recuperação de Créditos</div>
+                            <div class="text-sm text-white opacity-75">Recupere seus créditos de forma rápida, segura e eficiente.</div>
+                        </div>
+                    </div>
+                </div>
+                <a id="cta_button" href="#consultoria" class="px-12 py-4 rounded-lg text-lg font-semibold text-center w-full md:w-1/2 hover:opacity-75 transition-all duration-300" style="font-family: var(--primary-font); background: var(--foreground);">
+                    <ion-icon name="business-outline" class="mr-2"></ion-icon>Agende uma Reunião
+                </a>
+            </div>
+            <div class="flex justify-center items-center p-0 md:p-4">
+                <!-- <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                    <span class="text-gray-500 text-lg">Consultoria Financeira</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/30 text-sm px-4 py-2 rounded-full mb-4 border border-white/40 text-[--text]">
+            <ion-icon name="briefcase-outline" class="align-middle mr-1"></ion-icon> Consultoria Especializada
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Por que nossa consultoria é a escolha certa para você?</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-90">Oferecemos soluções financeiras e comerciais personalizadas para empresários e investidores, garantindo estratégias eficazes para captação de recursos e recuperação de créditos.</p>
+        <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl bg-gradient-to-br from-white/80 to-white border border-white/20 p-6 hover:shadow-lg transition">
+                <ion-icon name="cash-outline" class="text-4xl mb-4 text-[#002a66]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[#002a66]" style="font-family: var(--primary-font);">Captação de Investimentos</h3>
+                <p class="text-sm leading-relaxed text-[#002a66] opacity-80">Desenvolvemos estratégias para atrair investidores e ampliar suas oportunidades de negócio.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/80 to-white border border-white/20 p-6 hover:shadow-lg transition">
+                <ion-icon name="refresh-outline" class="text-4xl mb-4 text-[#002a66]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[#002a66]" style="font-family: var(--primary-font);">Recuperação de Créditos</h3>
+                <p class="text-sm leading-relaxed text-[#002a66] opacity-80">Recupere créditos com eficiência através de nossas abordagens inovadoras e assertivas.</p>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-white/80 to-white border border-white/20 p-6 hover:shadow-lg transition">
+                <ion-icon name="analytics-outline" class="text-4xl mb-4 text-[#002a66]"></ion-icon>
+                <h3 class="text-lg font-semibold mb-2 text-[#002a66]" style="font-family: var(--primary-font);">Análise Comercial</h3>
+                <p class="text-sm leading-relaxed text-[#002a66] opacity-80">Aprimore seu desempenho comercial com insights detalhados e orientações estratégicas.</p>
+            </div>
+        </div>
+        <a id="cta_button" href="#consultoria" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--text]"><ion-icon name="business-outline" class="mr-2"></ion-icon>Agende sua consulta</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]" style="font-family: var(--primary-font);">
+            <ion-icon name="cash-outline" class="align-middle mr-1"></ion-icon> Serviços Oferecidos
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Transforme sua gestão financeira e comercial</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Descubra estratégias eficazes para captação de investimentos e recuperação de créditos, garantindo o sucesso de sua empresa.</p>
+        <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./card1.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gradient" style="font-family: var(--primary-font);">Consultoria Personalizada</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Receba orientação especializada para otimizar suas finanças empresariais.</p>
+                </div>
+            </div>
+            <div>
+               <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./card2.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gradient" style="font-family: var(--primary-font);">Captação de Investimentos</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Estratégias para atrair investidores e expandir seu negócio.</p>
+                </div>
+            </div>
+            <div>
+                 <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./card3.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gradient" style="font-family: var(--primary-font);">Recuperação de Créditos</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Recupere créditos de forma eficiente e melhore seu fluxo de caixa.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-200 rounded-t-xl h-48 flex items-center justify-center relative">
+                    <img src="./card4.jpg" class="w-full h-full object-cover rounded-t-xl" />
+                </div>
+                <div class="bg-gray-50 rounded-b-xl p-4 shadow-sm">
+                    <h3 class="text-lg font-semibold text-gradient" style="font-family: var(--primary-font);">Análise de Mercado</h3>
+                    <p class="text-sm text-gray-600 mb-3 text-[--text] opacity-80">Compreenda o mercado e tome decisões informadas para seu negócio.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 text-[--text]" style="font-family: var(--primary-font); background: var(--foreground);"><ion-icon name="business-outline" class="mr-2"></ion-icon>Conheça todos os serviços</a>
+    </div>
+</section>
+
+<section class="min-h-screen flex items-center py-20 gap-12">
+    <div class="max-w-6xl mx-auto p-4 md:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-12 animate__animated animate__fadeInUp">
+        <div class="flex justify-center items-center">
+            <div class="rounded-xl w-full h-[300px] md:h-[600px] bg-gray-200 flex items-center justify-center mb-4 md:mb-0">
+                <img src="./arrow.jpg" class="w-full h-full object-cover" />
+            </div>
+        </div>
+        <div class="max-w-6xl">
+            <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+                <ion-icon name="checkmark-circle-outline" class="align-middle mr-1"></ion-icon> O que você vai encontrar
+            </div>
+            <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left text-[--text]" style="font-family: var(--primary-font);">Consultoria estratégica para resultados marcantes</h2>
+            <div id="list" class="space-y-3 mb-10">
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Estratégias de captação de investimentos eficazes</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Recuperação de créditos com soluções personalizadas</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Consultoria financeira para expansão de negócios</span></div>
+                <div class='flex items-start gap-2'><ion-icon name='checkmark-circle-outline' class='text-[--primary] text-xl mt-1'></ion-icon><span class='text-base leading-relaxed text-[--text]'>Análise de mercado para decisões assertivas</span></div>
+            </div>
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--primary] text-[--text]" style="font-family: var(--primary-font); background: var(--foreground);"><ion-icon name="ribbon" class="mr-2"></ion-icon>Quero esses benefícios</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block bg-white/30 text-sm px-4 py-2 rounded-full mb-4 border border-white/40 text-[--text]">
+            <ion-icon name="business-outline" class="align-middle mr-1"></ion-icon> Consultoria Especializada
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold max-w-3xl mx-auto mb-4 text-[#002a66]">Impulsione seu negócio com estratégias financeiras eficazes!</h2>
+        <p id="description" class="max-w-2xl mx-auto leading-relaxed text-left md:text-center text-[#002a66]">Descubra soluções personalizadas para captação de investimentos e recuperação de créditos, garantindo o crescimento sustentável do seu empreendimento.</p>
+        <a id="cta_button" href="#consultoria" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--primary]"><ion-icon name="trending-up-outline" class="mr-2"></ion-icon>Saiba mais</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="chatbubble-ellipses-outline" class="align-middle mr-1"></ion-icon> Depoimentos Reais
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">O que nossos clientes dizem</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            <div class="rounded-xl p-6 shadow bg-black/5" style="background: var(--foreground);">
+                <div class="w-12 h-12 rounded-full bg-[#002a6640] mb-4"></div>
+                <p class="italic mb-4 text-[#002a66]">“A consultoria foi essencial para a captação de investimentos que transformaram nosso negócio.”</p>
+                <div class="font-semibold text-[--text]">Lucas A., Rio de Janeiro</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5" style="background: var(--foreground);">
+                <div class="w-12 h-12 rounded-full bg-[#002a6640] mb-4"></div>
+                <p class="italic mb-4 text-[#002a66]">“Profissionais incríveis! Consegui recuperar créditos que achava perdidos.”</p>
+                <div class="font-semibold text-[--text]">Mariana T., Belo Horizonte</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5" style="background: var(--foreground);">
+                <div class="w-12 h-12 rounded-full bg-[#002a6640] mb-4"></div>
+                <p class="italic mb-4 text-[#002a66]">“Com a consultoria, nossa empresa alcançou novos patamares de sucesso.”</p>
+                <div class="font-semibold text-[--text]">Carlos R., Porto Alegre</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5" style="background: var(--foreground);">
+                <div class="w-12 h-12 rounded-full bg-[#002a6640] mb-4"></div>
+                <p class="italic mb-4 text-[#002a66]">“A expertise da equipe nos guiou na recuperação financeira com estratégias eficazes.”</p>
+                <div class="font-semibold text-[--text]">Fernanda S., Brasília</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5" style="background: var(--foreground);">
+                <div class="w-12 h-12 rounded-full bg-[#002a6640] mb-4"></div>
+                <p class="italic mb-4 text-[#002a66]">“Serviço de consultoria altamente qualificado e comprometido com resultados.”</p>
+                <div class="font-semibold text-[--text]">Rafael L., São Paulo</div>
+            </div>
+            <div class="rounded-xl p-6 shadow bg-black/5" style="background: var(--foreground);">
+                <div class="w-12 h-12 rounded-full bg-[#002a6640] mb-4"></div>
+                <p class="italic mb-4 text-[#002a66]">“Recomendo a todos que buscam uma recuperação de créditos eficiente.”</p>
+                <div class="font-semibold text-[--text]">Ana P., Salvador</div>
+            </div>
+        </div>
+        <a href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300" style="background: var(--foreground);"><ion-icon name="ribbon" class="mr-2"></ion-icon>Agendar uma Reunião</a>
+    </div>
+</section>
+
+<section class="min-h-screen py-20 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+        <div id="badge" class="inline-block text-sm px-4 py-2 rounded-full mb-4 border border-[--primary] text-[--primary]">
+            <ion-icon name="card-outline" class="align-middle mr-1"></ion-icon> Consultoria
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center max-w-3xl mx-auto text-[--text]" style="font-family: var(--primary-font);">Maximize seus investimentos e recupere créditos com confiança</h2>
+        <div class="p-8 rounded-2xl max-w-md w-full mx-auto mb-12 text-[#002a66] shadow-lg" style="background: var(--foreground);">
+            <div class="text-left mb-4">
+                <p class="text-sm text-[#002a66] opacity-75">A partir de:</p>
+                <p class="text-7xl font-bold text-[--text]">R$5.497</p>
+            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[#002a66] text-xl"></ion-icon>
+                    <span>Análise financeira personalizada</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[#002a66] text-xl"></ion-icon>
+                    <span>Estratégias de captação de investimentos</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[#002a66] text-xl"></ion-icon>
+                    <span>Recuperação de créditos eficiente</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[#002a66] text-xl"></ion-icon>
+                    <span>Relatórios detalhados mensais</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[#002a66] text-xl"></ion-icon>
+                    <span>Consultoria com especialistas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <ion-icon name="checkmark-circle-outline" class="text-[#002a66] text-xl"></ion-icon>
+                    <span>Suporte exclusivo 24/7</span>
+                </li>
+            </ul>
+            
+            <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full hover:opacity-75 transition-all duration-300 bg-[--text-primary] text-[--text] uppercase"><ion-icon name="ribbon" class="mr-2"></ion-icon>Contrate agora!</a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20" style="background: var(--foreground);">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-left md:text-center animate__animated animate__fadeInUp">
+         <div id="badge" class="inline-block bg-white/30 text-sm px-4 py-2 rounded-full mb-4 border border-white/40 text-[--text]">
+            <ion-icon name="help-circle-outline" class="align-middle mr-1"></ion-icon> FAQ
+        </div>
+        <h2 id="headline" class="text-5xl md:text-6xl font-bold mb-6 text-left md:text-center text-[--text]" style="font-family: var(--primary-font);">Perguntas Frequentes</h2>
+        <p id="description" class="max-w-2xl mx-auto mb-12 leading-relaxed text-left md:text-center text-[--text] opacity-80">Descubra como podemos ajudar empresários e indivíduos na captação de investimentos ou recuperação de créditos.</p>
+        
+        <div id="accordion-faq">
+            <details class="w-full text-left py-5 text-[--text] font-semibold focus:outline-none border-b border-[--text] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Quais serviços oferecemos?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text] font-normal mt-2">Oferecemos consultoria personalizada para captação de investimentos e recuperação de créditos, além de análise financeira detalhada.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text] font-semibold focus:outline-none border-b border-[--text] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Como podemos ajudar empresários?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text] font-normal mt-2">Ajudamos empresários a otimizar suas finanças, melhorar a gestão de recursos e identificar novas oportunidades de investimento.</p>
+            </details>
+            <details class="w-full text-left py-5 text-[--text] font-semibold focus:outline-none border-b border-[--text] cursor-pointer flex items-center justify-between group">
+                <summary class="flex items-start justify-between w-full cursor-pointer list-none">
+                    <span>Quem pode se beneficiar dos nossos serviços?</span>
+                    <span class="ml-2 transition-transform group-open:rotate-180">
+                        <ion-icon name="chevron-down-outline" class="text-[--text] text-lg"></ion-icon>
+                    </span>
+                </summary>
+                <p class="text-[--text] font-normal mt-2">Nossos serviços são ideais para empresários, startups e qualquer pessoa em busca de captação de investimentos ou recuperação de créditos.</p>
+            </details>
+        </div>
+        
+        <a id="cta_button" href="#" class="px-6 py-4 rounded-lg font-semibold text-lg text-center mt-10 inline-block w-full md:w-fit hover:opacity-75 transition-all duration-300 bg-white text-[--text]"><ion-icon name="ribbon" class="mr-2"></ion-icon>Fale Conosco</a>
+    </div>
+</section>
+
+<footer class="bg-black text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <p class="text-xs">© 2025 Mova Capital. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
