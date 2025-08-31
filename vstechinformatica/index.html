@@ -58,6 +58,19 @@
         .rotating-text-svg {
             animation: spin 25s linear infinite;
         }
+
+        @keyframes infinite-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        .animate-infinite-scroll {
+            animation: infinite-scroll 10s linear infinite;
+            display: flex;
+        }
+        .overflow-hidden-mask {
+            -webkit-mask-image: linear-gradient(to right, transparent, #000 20%, #000 80%, transparent);
+            mask-image: linear-gradient(to right, transparent, #000 20%, #000 80%, transparent);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -73,10 +86,7 @@
     <header class="bg-[#0D1117]/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-3">
-                <!-- SVG Logo Símbolo -->
                 <img src="./assets/VSTECH_TEXT.svg" alt="" class="h-4 w-auto">
-                <!-- <img src="./assets/VSTECH_LOGO_WHITE.svg" alt="" class="h-6 w-auto">
-                <span class="text-2xl font-bold text-gray-100">VSTECH</span> -->
             </a>
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="#servicos" class="text-gray-400 hover:text-white transition-colors duration-300">Serviços</a>
@@ -123,6 +133,26 @@
                         <a href="#" onclick="window.open(whatsappLink, '_blank')" class="bg-vstech-green hover:bg-vstech-green-dark text-white font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block shadow-lg shadow-green-900/40">
                             Solicitar Orçamento Gratuito
                         </a>
+                    </div>
+                </div>
+                <div class="relative mt-12">
+                    <div class="w-full overflow-hidden-mask">
+                        <div class="flex animate-infinite-scroll">
+                            <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img3.jpg" alt="Cliente 3" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img4.jpg" alt="Cliente 4" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img7.jpg" alt="Cliente 7" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img8.jpg" alt="Cliente 8" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img9.jpg" alt="Cliente 9" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img10.jpg" alt="Cliente 10" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg">
+                            <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -260,6 +290,37 @@
             </div>
         </section>
         
+        <!-- SEÇÃO DEPOIMENTOS/MARCAS -->
+        <section id="marcas" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Nossos Clientes e Parceiros</h2>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">Confiança e qualidade que geram resultados.</p>
+                </div>
+            </div>
+
+            <div class="relative mt-12">
+                <div class="w-full overflow-hidden">
+                    <div class="flex animate-infinite-scroll">
+                        <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img3.jpg" alt="Cliente 3" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img4.jpg" alt="Cliente 4" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img7.jpg" alt="Cliente 7" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img8.jpg" alt="Cliente 8" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img9.jpg" alt="Cliente 9" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img10.jpg" alt="Cliente 10" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg">
+                        <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SEÇÃO CTA FINAL -->
         <section class="py-20">
             <div class="container mx-auto px-6 text-center reveal">
