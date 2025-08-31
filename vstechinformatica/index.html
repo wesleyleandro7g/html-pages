@@ -6,6 +6,12 @@
     <title>VSTECH Informática - Assistência Técnica Premium</title>
     <meta name="description" content="Assistência técnica premium para notebooks, computadores e celulares. Diagnóstico rápido, reparo eficiente e garantia de qualidade. Fale com um especialista!">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -13,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <style>
         body {
@@ -123,6 +133,13 @@
                         </div>
                     </div>
 
+                    <div class="flex justify-center mb-4 reveal bg-white/5 border border-white/10 w-fit mx-auto rounded-full">
+                        <span class="bg-vstech-green/10 text-vstech-green text-sm font-medium px-4 py-1 rounded-full flex items-center">
+                            <ion-icon name="ribbon" class="h-5 w-5 mr-2"></ion-icon>
+                            Assistência Premium
+                        </span>
+                    </div>
+
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 mb-6 leading-tight reveal" style="transition-delay: 150ms;">
                         Seu Equipamento Parou? Nós Resolvemos!
                     </h1>
@@ -162,6 +179,12 @@
         <section id="servicos" class="py-20 min-h-screen flex flex-col justify-center">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
+                    <div class="flex justify-center mb-4 reveal bg-white/5 border border-white/10 w-fit mx-auto rounded-full">
+                        <span class="bg-vstech-green/10 text-vstech-green text-sm font-medium px-4 py-1 rounded-full flex items-center">
+                            <ion-icon name="diamond-outline" class="h-5 w-5 mr-2"></ion-icon>
+                            Especialidades
+                        </span>
+                    </div>
                     <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Nossas Especialidades</h2>
                     <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">Soluções completas para manter seus dispositivos sempre em perfeito funcionamento.</p>
                 </div>
@@ -170,7 +193,7 @@
                     <div class="bg-gradient-to-r from-[#238636] to-[#38a6ff] rounded-xl max-w-4xl mx-auto reveal">
                         <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform -translate-y-2 translate-x-2">
                             <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                                <ion-icon name="phone-portrait-outline" class="h-8 w-8 text-vstech-green"></ion-icon>
                             </div>
                             <h3 class="text-2xl font-semibold mb-3 text-white">Reparo de Celulares</h3>
                             <p class="text-gray-400">Sua tela quebrou? Bateria viciada? Resolvemos! Troca de componentes com peças de alta qualidade.</p>
@@ -180,7 +203,7 @@
                     <div class="bg-gradient-to-r from-[#238636] to-[#38a6ff] rounded-xl max-w-4xl mx-auto reveal" style="transition-delay: 150ms;">
                          <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform -translate-y-2 translate-x-2">
                             <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                <ion-icon name="laptop-outline" class="h-8 w-8 text-vstech-green"></ion-icon>
                             </div>
                             <h3 class="text-2xl font-semibold mb-3 text-white">Notebooks e PCs</h3>
                             <p class="text-gray-400">Manutenção completa: formatação, instalação de SSD, limpeza interna e reparo de carcaças.</p>
@@ -190,7 +213,7 @@
                     <div class="bg-gradient-to-r from-[#238636] to-[#38a6ff] rounded-xl max-w-4xl mx-auto reveal" style="transition-delay: 150ms;">
                         <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform -translate-y-2 translate-x-2">
                             <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
+                                <ion-icon name="rocket-outline" class="h-8 w-8 text-vstech-green"></ion-icon>
                             </div>
                             <h3 class="text-2xl font-semibold mb-3 text-white">Upgrades de Performance</h3>
                             <p class="text-gray-400">Deixe sua máquina mais rápida! Instalação de SSD, aumento de memória RAM e otimização de sistema.</p>
@@ -208,14 +231,14 @@
                     <p class="text-lg text-gray-400 mb-8">Nossa filosofia é simples: "Zelo pelo seu equipamento". Isso se reflete em cada etapa do nosso trabalho, da análise inicial à entrega do aparelho 100% funcional.</p>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="bg-vstech-green/10 text-vstech-green p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                            <div class="bg-vstech-green/10 text-vstech-green p-3 rounded-full"><ion-icon name="shield-checkmark-outline" class="h-6 w-6"></ion-icon></div>
                             <div>
                                 <h4 class="text-xl font-semibold text-white">Diagnóstico Gratuito e Transparente</h4>
                                 <p class="text-gray-400">Avaliamos seu aparelho sem custo e explicamos exatamente qual é o problema e como vamos resolver.</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
-                            <div class="bg-vstech-green/10 text-vstech-green p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                            <div class="bg-vstech-green/10 text-vstech-green p-3 rounded-full"><ion-icon name="flash-outline" class="h-6 w-6"></ion-icon></div>
                             <div>
                                 <h4 class="text-xl font-semibold text-white">Agilidade no Reparo</h4>
                                 <p class="text-gray-400">Sabemos que você precisa do seu equipamento. Por isso, otimizamos nossos processos para entregar o serviço no menor tempo possível.</p>
@@ -235,6 +258,12 @@
         <section id="detalhes-servicos" class="py-20 bg-[#161B22] border-y border-gray-800">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
+                    <div class="flex justify-center mb-4 reveal bg-white/5 border border-white/10 w-fit mx-auto rounded-full">
+                        <span class="bg-vstech-green/10 text-vstech-green text-sm font-medium px-4 py-1 rounded-full flex items-center">
+                            <ion-icon name="construct-outline" class="h-5 w-5 mr-2"></ion-icon>
+                            Serviços
+                        </span>
+                    </div>
                     <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Nossos Serviços em Detalhes</h2>
                     <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">Cobertura completa para todas as necessidades do seu equipamento.</p>
                 </div>
@@ -295,6 +324,12 @@
         <section id="faq" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
+                    <div class="flex justify-center mb-4 reveal bg-white/5 border border-white/10 w-fit mx-auto rounded-full">
+                        <span class="bg-vstech-green/10 text-vstech-green text-sm font-medium px-4 py-1 rounded-full flex items-center">
+                            <ion-icon name="help-outline" class="h-5 w-5 mr-2"></ion-icon>
+                            FAQ
+                        </span>
+                    </div>
                     <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Dúvidas Frequentes</h2>
                     <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">Respostas para as perguntas mais comuns de nossos clientes.</p>
                 </div>
@@ -303,7 +338,7 @@
                     <div class="bg-[#161B22] border border-gray-800 rounded-lg reveal">
                         <button class="w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-white faq-question">
                             <span>O orçamento tem algum custo?</span>
-                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <ion-icon name="chevron-down-outline" class="w-5 h-5 transform transition-transform duration-300"></ion-icon>
                         </button>
                         <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                             <div class="p-6 pt-0 text-gray-400">
@@ -315,7 +350,7 @@
                     <div class="bg-[#161B22] border border-gray-800 rounded-lg reveal">
                          <button class="w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-white faq-question">
                             <span>Vocês oferecem garantia do serviço?</span>
-                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <ion-icon name="chevron-down-outline" class="w-5 h-5 transform transition-transform duration-300"></ion-icon>
                         </button>
                         <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                             <div class="p-6 pt-0 text-gray-400">
@@ -327,7 +362,7 @@
                     <div class="bg-[#161B22] border border-gray-800 rounded-lg reveal">
                         <button class="w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-white faq-question">
                             <span>Quanto tempo demora o reparo?</span>
-                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <ion-icon name="chevron-down-outline" class="w-5 h-5 transform transition-transform duration-300"></ion-icon>
                         </button>
                         <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
                             <div class="p-6 pt-0 text-gray-400">
@@ -343,6 +378,12 @@
         <section id="onde-estamos" class="py-20 bg-[#0D1117]">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
+                    <div class="flex justify-center mb-4 reveal bg-white/5 border border-white/10 w-fit mx-auto rounded-full">
+                        <span class="bg-vstech-green/10 text-vstech-green text-sm font-medium px-4 py-1 rounded-full flex items-center">
+                            <ion-icon name="map-outline" class="h-5 w-5 mr-2"></ion-icon>
+                            Localização
+                        </span>
+                    </div>
                     <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Onde Estamos</h2>
                     <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">Faça-nos uma visita! Nosso laboratório está de portas abertas para receber seu equipamento.</p>
                 </div>
@@ -358,6 +399,12 @@
         <section id="depoimentos" class="py-20 bg-[#161B22] border-y border-gray-800">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
+                    <div class="flex justify-center mb-4 reveal bg-white/5 border border-white/10 w-fit mx-auto rounded-full">
+                        <span class="bg-vstech-green/10 text-vstech-green text-sm font-medium px-4 py-1 rounded-full flex items-center">
+                            <ion-icon name="chatbubbles-outline" class="h-5 w-5 mr-2"></ion-icon>
+                            Depoimentos
+                        </span>
+                    </div>
                     <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">O que Nossos Clientes Dizem</h2>
                     <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">A satisfação de quem confia em nosso trabalho é a nossa maior recompensa.</p>
                 </div>
@@ -369,11 +416,11 @@
                             <div>
                                 <h4 class="text-lg font-semibold text-white">João da Silva</h4>
                                 <div class="flex items-center text-yellow-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
                                 </div>
                             </div>
                         </div>
@@ -386,11 +433,11 @@
                             <div>
                                 <h4 class="text-lg font-semibold text-white">Maria Oliveira</h4>
                                 <div class="flex items-center text-yellow-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
                                 </div>
                             </div>
                         </div>
@@ -403,11 +450,11 @@
                             <div>
                                 <h4 class="text-lg font-semibold text-white">Carlos Souza</h4>
                                 <div class="flex items-center text-yellow-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
+                                    <ion-icon name="star" class="w-5 h-5"></ion-icon>
                                 </div>
                             </div>
                         </div>
@@ -449,7 +496,7 @@
             <div class="flex justify-center space-x-6 mb-6">
                  <a href="https://www.instagram.com/vstech.info" target="_blank" class="hover:text-white transition-colors duration-300">
                      <span class="sr-only">Instagram</span>
-                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zm-1.04 2.115c-2.368 0-2.69.009-3.638.052-.924.042-1.48.196-1.912.355-.443.163-.748.373-1.082.706-.334.334-.543.639-.706 1.082-.159.432-.313.988-.355 1.912-.043.948-.052 1.27-.052 3.638s.009 2.69.052 3.638c.042.924.196 1.48.355 1.912.163.443.373.748.706 1.082.334.334.639.543 1.082.706.432.159.988.313 1.912.355.948.043 1.27.052 3.638.052s2.69-.009 3.638-.052c.924-.042 1.48-.196 1.912-.355.443-.163.748-.373 1.082-.706.334-.334.543-.639.706-1.082.159-.432.313-.988.355-1.912.043-.948.052-1.27.052-3.638s-.009-2.69-.052-3.638c-.042-.924-.196-1.48-.355-1.912a3.322 3.322 0 00-.706-1.082 3.322 3.322 0 00-1.082-.706c-.432-.159-.988-.313-1.912-.355-.948-.043-1.27-.052-3.638-.052zM12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" clip-rule="evenodd" /></svg>
+                     <ion-icon name="logo-instagram" class="w-6 h-6"></ion-icon>
                  </a>
             </div>
             <p class="text-sm">&copy; <span id="currentYear"></span> Todos os direitos reservados a VSTECH Informática.</p>
@@ -465,7 +512,7 @@
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
                 const answer = question.nextElementSibling;
-                const icon = question.querySelector('svg');
+                const icon = question.querySelector('ion-icon');
 
                 if (answer.style.maxHeight) {
                     answer.style.maxHeight = null;
@@ -474,7 +521,7 @@
                     // Opcional: Fechar outros itens abertos
                     document.querySelectorAll('.faq-question').forEach(q => {
                         q.nextElementSibling.style.maxHeight = null;
-                        q.querySelector('svg').style.transform = 'rotate(0deg)';
+                        q.querySelector('ion-icon').style.transform = 'rotate(0deg)';
                     });
                     
                     answer.style.maxHeight = answer.scrollHeight + 'px';
@@ -505,4 +552,3 @@
 
 </body>
 </html>
-
