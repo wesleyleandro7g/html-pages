@@ -64,7 +64,7 @@
             to { transform: translateX(-100%); }
         }
         .animate-infinite-scroll {
-            animation: infinite-scroll 10s linear infinite;
+            animation: infinite-scroll 40s linear infinite;
             display: flex;
         }
         .overflow-hidden-mask {
@@ -119,12 +119,12 @@
                         </svg>
                         <!-- Logo estático no centro -->
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <img src="./assets//VSTECH_LOGO.svg" alt="vstech logo" class="h-20 w-auto">
+                            <img src="./assets/VSTECH_LOGO.svg" alt="vstech logo" class="h-20 w-auto">
                         </div>
                     </div>
 
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mb-6 leading-tight reveal" style="transition-delay: 150ms;">
-                        Seu equipamento parou? Nós resolvemos!
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 mb-6 leading-tight reveal" style="transition-delay: 150ms;">
+                        Seu Equipamento Parou? Nós Resolvemos!
                     </h1>
                     <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 reveal" style="transition-delay: 300ms;">
                         Assistência técnica especializada com diagnóstico preciso e reparo ágil para <span class="text-white font-medium">notebooks, computadores e celulares</span>.
@@ -137,21 +137,21 @@
                 </div>
                 <div class="relative mt-12">
                     <div class="w-full overflow-hidden-mask">
-                        <div class="flex animate-infinite-scroll">
-                            <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img3.jpg" alt="Cliente 3" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img4.jpg" alt="Cliente 4" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img7.jpg" alt="Cliente 7" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img8.jpg" alt="Cliente 8" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img9.jpg" alt="Cliente 9" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img10.jpg" alt="Cliente 10" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg">
-                            <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg">
+                        <div class="flex w-[140rem] animate-infinite-scroll">
+                            <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img3.jpg" alt="Cliente 3" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img4.jpg" alt="Cliente 4" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img7.jpg" alt="Cliente 7" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img8.jpg" alt="Cliente 8" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img9.jpg" alt="Cliente 9" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img10.jpg" alt="Cliente 10" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img2.jpg" alt="Cliente 2" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img5.jpg" alt="Cliente 5" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img1.jpg" alt="Cliente 1" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
+                            <img src="./assets/img6.jpg" alt="Cliente 6" class="w-56 h-auto mx-4 rounded-lg flex-shrink-0">
                         </div>
                     </div>
                 </div>
@@ -167,35 +167,41 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Card 1 -->
-                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal">
-                        <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    <div class="bg-gradient-to-r from-[#238636] to-[#38a6ff] rounded-xl max-w-4xl mx-auto reveal">
+                        <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform -translate-y-2 translate-x-2">
+                            <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Reparo de Celulares</h3>
+                            <p class="text-gray-400">Sua tela quebrou? Bateria viciada? Resolvemos! Troca de componentes com peças de alta qualidade.</p>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-3 text-white">Reparo de Celulares</h3>
-                        <p class="text-gray-400">Sua tela quebrou? Bateria viciada? Resolvemos! Troca de componentes com peças de alta qualidade.</p>
                     </div>
                     <!-- Card 2 -->
-                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 150ms;">
-                        <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                    <div class="bg-gradient-to-r from-[#238636] to-[#38a6ff] rounded-xl max-w-4xl mx-auto reveal" style="transition-delay: 150ms;">
+                         <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform -translate-y-2 translate-x-2">
+                            <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Notebooks e PCs</h3>
+                            <p class="text-gray-400">Manutenção completa: formatação, instalação de SSD, limpeza interna e reparo de carcaças.</p>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-3 text-white">Notebooks e PCs</h3>
-                        <p class="text-gray-400">Manutenção completa: formatação, instalação de SSD, limpeza interna e reparo de carcaças.</p>
                     </div>
                     <!-- Card 3 -->
-                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 300ms;">
-                        <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
+                    <div class="bg-gradient-to-r from-[#238636] to-[#38a6ff] rounded-xl max-w-4xl mx-auto reveal" style="transition-delay: 150ms;">
+                        <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform -translate-y-2 translate-x-2">
+                            <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">Upgrades de Performance</h3>
+                            <p class="text-gray-400">Deixe sua máquina mais rápida! Instalação de SSD, aumento de memória RAM e otimização de sistema.</p>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-3 text-white">Upgrades de Performance</h3>
-                        <p class="text-gray-400">Deixe sua máquina mais rápida! Instalação de SSD, aumento de memória RAM e otimização de sistema.</p>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- SEÇÃO DIFERENCIAIS -->
-        <section id="diferenciais" class="py-20 bg-[#161B22] border-y border-gray-800">
+        <section id="diferenciais" class="py-20 bg-[#161B22] border-y border-gray-800 min-h-screen flex justify-center">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div class="reveal">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6">Por que escolher a <span class="vstech-green">VSTECH</span>?</h2>
@@ -218,9 +224,68 @@
                     </div>
                 </div>
                 <div class="reveal" style="transition-delay: 150ms;">
-                    <div class="w-full h-96 bg-gray-800 border border-gray-700 rounded-xl flex items-center justify-center text-gray-500">
-                        <!-- Substitua por uma imagem profissional da sua equipe ou oficina -->
-                        [Imagem da VSTECH 500x384]
+                    <div class="w-full bg-gray-800 border border-gray-700 rounded-xl flex items-center justify-center text-gray-500">
+                        <img src="./assets/img11.jpg" alt="" class="object-cover w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS DETALHADOS (MODIFICADA) -->
+        <section id="detalhes-servicos" class="py-20 bg-[#161B22] border-y border-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 reveal">Nossos Serviços em Detalhes</h2>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto reveal" style="transition-delay: 150ms;">Cobertura completa para todas as necessidades do seu equipamento.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Serviço 1: Formatação -->
+                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal">
+                        <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h5M20 20v-5h-5M4 20h5v-5M20 4h-5v5" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">Formatação com Backup</h3>
+                        <p class="text-gray-400">Sistema reinstalado do zero para máxima performance, com a segurança de todos os seus arquivos importantes salvos.</p>
+                    </div>
+                    <!-- Serviço 2: Montagem -->
+                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 100ms;">
+                        <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l4-4 4 4m0 6l-4 4-4-4" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">Montagem de PCs</h3>
+                        <p class="text-gray-400">Montamos o computador ideal para você, seja gamer ou para trabalho, com as melhores peças e organização impecável.</p>
+                    </div>
+                    <!-- Serviço 3: Limpeza -->
+                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 200ms;">
+                        <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">Limpeza e Pasta Térmica</h3>
+                        <p class="text-gray-400">Evite o superaquecimento. Limpeza interna completa e aplicação de pasta térmica de alta performance.</p>
+                    </div>
+                    <!-- Serviço 4: Reparo de Carcaça -->
+                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 300ms;">
+                         <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">Reparo de Carcaça</h3>
+                        <p class="text-gray-400">Recuperamos a estrutura do seu notebook, consertando dobradiças e partes plásticas quebradas.</p>
+                    </div>
+                     <!-- Serviço 5: Instalação de SSD -->
+                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 400ms;">
+                         <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3M5.636 5.636l1.414 1.414m10.05-1.414l-1.414 1.414M19.364 5.636l-1.414 1.414m-10.05 10.05l1.414-1.414" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">Instalação de SSD</h3>
+                        <p class="text-gray-400">O melhor upgrade para seu PC ou notebook. Deixe seu sistema até 10x mais rápido com um SSD de alta velocidade.</p>
+                    </div>
+                     <!-- Serviço 6: Manutenção Geral -->
+                    <div class="bg-[#161B22] border border-gray-800 rounded-xl p-8 transform hover:-translate-y-2 transition-transform duration-300 reveal" style="transition-delay: 500ms;">
+                         <div class="bg-gray-800/50 border border-gray-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-vstech-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white">Manutenção em Geral</h3>
+                        <p class="text-gray-400">Solução de problemas de software, remoção de vírus, falhas de sistema e otimizações gerais.</p>
                     </div>
                 </div>
             </div>
@@ -344,8 +409,10 @@
     <footer class="bg-[#0D1117] border-t border-gray-800">
         <div class="container mx-auto px-6 py-8 text-center text-gray-500">
             <a href="#home" class="flex justify-center items-center space-x-3 mb-4">
-                <svg class="h-7 w-auto" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L81 81L32.4 81L0 48.6V0Z" fill="#238636"/><path d="M162 0L81 81H129.6L162 48.6V0Z" fill="#238636"/><path d="M81 162L129.6 81H32.4L81 162Z" fill="#38a6ff"/></svg>
-                <span class="text-xl font-bold text-gray-400">VSTECH INFORMÁTICA</span>
+                <img src="./assets/VSTECH_LOGO.svg" alt="vstech logo" class="h-6 w-auto">
+                <img src="./assets/VSTECH_TEXT.svg" alt="vstech logo" class="h-4 w-auto">
+                <!-- <svg class="h-7 w-auto" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L81 81L32.4 81L0 48.6V0Z" fill="#238636"/><path d="M162 0L81 81H129.6L162 48.6V0Z" fill="#238636"/><path d="M81 162L129.6 81H32.4L81 162Z" fill="#38a6ff"/></svg>
+                <span class="text-xl font-bold text-gray-400">VSTECH INFORMÁTICA</span> -->
             </a>
             <div class="flex justify-center space-x-6 mb-6">
                  <a href="https://www.instagram.com/vstech.info" target="_blank" class="hover:text-white transition-colors duration-300">
@@ -353,7 +420,7 @@
                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zm-1.04 2.115c-2.368 0-2.69.009-3.638.052-.924.042-1.48.196-1.912.355-.443.163-.748.373-1.082.706-.334.334-.543.639-.706 1.082-.159.432-.313.988-.355 1.912-.043.948-.052 1.27-.052 3.638s.009 2.69.052 3.638c.042.924.196 1.48.355 1.912.163.443.373.748.706 1.082.334.334.639.543 1.082.706.432.159.988.313 1.912.355.948.043 1.27.052 3.638.052s2.69-.009 3.638-.052c.924-.042 1.48-.196 1.912-.355.443-.163.748-.373 1.082-.706.334-.334.543-.639.706-1.082.159-.432.313-.988.355-1.912.043-.948.052-1.27.052-3.638s-.009-2.69-.052-3.638c-.042-.924-.196-1.48-.355-1.912a3.322 3.322 0 00-.706-1.082 3.322 3.322 0 00-1.082-.706c-.432-.159-.988-.313-1.912-.355-.948-.043-1.27-.052-3.638-.052zM12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" clip-rule="evenodd" /></svg>
                  </a>
             </div>
-            <p class="text-sm">&copy; <span id="currentYear"></span> VSTECH Informática. Todos os direitos reservados. Site desenvolvido com paixão.</p>
+            <p class="text-sm">&copy; <span id="currentYear"></span> Todos os direitos reservados a VSTECH Informática.</p>
         </div>
     </footer>
 
